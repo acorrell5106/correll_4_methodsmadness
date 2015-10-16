@@ -33,26 +33,19 @@ public class Correll_4_JavaFXintro extends Application {
         GraphicsContext gc = canvas.getGraphicsContext2D();
         double [] myXs = {6, 9, 12};
         double [] myYs = {9, 28, 7};
-       //drawTriangle(gc, myXs, myYs, 3);
        // drawShapes(gc);
         drawTriangle(gc);
         root.getChildren().add(canvas);
         primaryStage.setScene(new Scene(root));
         primaryStage.show();
-    }
-
-    //private void drawTriangle(GraphicsContext gc, double [] myXs, double [] myYs, int w) {
-       //  double [] myXs = {6, 9, 6};
-       // double [] myYs = {9, 18, 27};
-       
-        //gc.setFill(Color.BLUEVIOLET);
-        //gc.fillPolygon(myXs, myYs, 50);
-    //}   
+    } 
+    
     private void drawTriangle(GraphicsContext gc) {
         double [] xPoints = {42, 42, 64};
         double [] yPoints = {42, 86, 64};
         gc.fillPolygon(xPoints, yPoints, 3);
     }
+    
     private void drawShapes(GraphicsContext gc) {
         gc.setFill(Color.LIGHTSALMON);
         gc.setStroke(Color.CADETBLUE);
@@ -73,9 +66,9 @@ public class Correll_4_JavaFXintro extends Application {
         gc.strokePolygon(new double[]{60, 90, 60, 90},
                          new double[]{210, 210, 240, 240}, 4);
         gc.strokePolyline(new double[]{110, 140, 110, 140},
-                          new double[]{210, 210, 240, 240}, 4);
-        
+                          new double[]{210, 210, 240, 240}, 4);  
     }
+    
     /*private void Patterns(GraphicsContext gc) {
         for(i = 0; i < 100; i++) {
     if (isTriangle(i)) {
@@ -88,9 +81,11 @@ public class Correll_4_JavaFXintro extends Application {
         drawHex();
 }else if (isTwo(i) & isHex(i)) {
         drawDodec();
+}else {
+        drawCat();
     }*/   
     static boolean isTwo(int two){
-        return(two % 12 == 0);
+        return(two % 2 == 0);
     }
     static boolean isTriangle(int triangle){
         return(triangle % 3 != 0);
