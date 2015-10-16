@@ -1,0 +1,9 @@
+Addison Correll's Methods Madness Progress
+
+	In my Methods Madness program, I have created a system that checks a number to see if it is divisible by a certain number, making its specific shape. This is where the
+methods come into play, checking to see if the number created by the for loop has a certain factor, creating the shape. For example, one of my methods checks the number from the for
+loop and checks to see if it has a factor of four, and will create a quadrilateral if this is true. My methods are named for this purpose, such as "isTriangle" or "isHex" to help 
+identify what is being checked to create the shape described. I have created all of these methods (up to "isDodec") and am currently making the shapes that will be created through 
+these different methods. I am hoping to have the numbers from zero to one hundred be counted in the for loop, be given to the methods to check for factors, and then have them be
+represented as their specific shape on the canvas, in a grid-like structure. So far, I still have to create all of the shapes, but I also have to consider creating a seperate for 
+loop for the x and y coordinates. I'm not exactly sure how this would work, but I'll get to it after I get the shapes the way I want them to be. That's what I have some far, but hopefully I will gain a better knowledge of my program, making the appropriate alterations. 
